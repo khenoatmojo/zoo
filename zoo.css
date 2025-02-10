@@ -1,0 +1,86 @@
+/* Global Styles */
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 20px;
+    border-bottom: 3px solid #FFD700; /* Warna emas */
+}
+
+header h1 {
+    font-size: 2em;
+    color: #FFD700;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Buy Section */
+#buy {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
+
+#buy h2 {
+    color: #FFD700;
+}
+
+#buy input {
+    padding: 10px;
+    width: 50%;
+    margin: 10px 0;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+#buy button {
+    background-color: #FFD700;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#buy button:hover {
+    background-color: #e6c300;
+}
+
+/* About Section */
+#about {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
+
+#about h2 {
+    color: #FFD700;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    padding: 15px;
+    font-size: 0.9em;
+    border-top: 3px solid #FFD700;
+}
+
