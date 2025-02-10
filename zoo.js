@@ -13,12 +13,17 @@ function buyTokens() {
 
     let totalCost = amount * TOKEN_PRICE;
 
-    // Simulasi transaksi
-    let confirmation = confirm(`🦁 Anda akan membeli ${amount} ZOO Token seharga ${totalCost.toFixed(6)} BNB. Lanjutkan?`);
-    
-    if (confirmation) {
+    // Simulasi transaksi tanpa menggunakan eval() atau kode berbahaya
+    if (window.confirm(`🦁 Anda akan membeli ${amount} ZOO Token seharga ${totalCost.toFixed(6)} BNB. Lanjutkan?`)) {
         alert("✅ Pembelian berhasil! Token akan segera dikirim ke wallet Anda.");
         amountInput.value = ""; // Reset input setelah pembelian
     }
 }
 
+// Pastikan script ini dipanggil setelah halaman dimuat
+document.addEventListener("DOMContentLoaded", function () {
+    let buyButton = document.getElementById("buyButton");
+    if (buyButton) {
+        buyButton.addEventListener("click", buyTokens);
+    }
+});
