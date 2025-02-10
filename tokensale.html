@@ -17,7 +17,7 @@
         <h2>Buy ZOO Tokens</h2>
         <p>Current Price: <strong>0.0001 BNB per Token</strong></p>
         <input type="number" id="amount" placeholder="Enter amount" min="1">
-        <button onclick="buyTokens()">Buy Now</button>
+        <button id="buyButton">Buy Now</button>
     </section>
     
     <section id="about">
@@ -29,12 +29,6 @@
         <p>© 2025 ZOO Token. All Rights Reserved.</p>
     </footer>
     
-    <script>
-        function buyTokens() {
-            let amount = document.getElementById("amount").value;
-            alert("You are buying " + amount + " ZOO tokens!");
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
